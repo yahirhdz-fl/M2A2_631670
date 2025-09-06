@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulario Torneo de Videojuegos</title>
+</head>
+<body>
+    <h1>Formulario de registro Torneo Videojuegos</h1>
+
+    <form action="#" method="post">
+        <table border="1" cellpadding="8" summary="Formulario de inscripción al torneo de videojuegos">
+        <tbody>
+            <tr>
+            <th><label for="nombre">Nombre del jugador</label></th>
+            <td>
+                <input id="nombre" name="nombre" type="text"
+                    placeholder="Ej. Ana" minlength="3" maxlength="15" required>
+            </td>
+            </tr>
+
+            <tr>
+            <th><label for="correo">Correo electrónico</label></th>
+            <td>
+                <input id="correo" name="correo" type="email"
+                    placeholder="tucorreo@dominio.com" required>
+            </td>
+            </tr>
+
+            <tr>
+            <th><label for="edad">Edad</label></th>
+            <td>
+                <input id="edad" name="edad" type="number" min="12" max="40" step="1" required>
+            </td>
+            </tr>
+
+            <tr>
+            <th><label for="nick">Nickname en el juego</label></th>
+            <td>
+                <input id="nick" name="nick" type="text"
+                    pattern="^[A-Za-z0-9]+$"
+                    title="Solo letras (A-Z) y números (0-9), sin espacios ni símbolos."
+                    placeholder="Ej. Gamer123" required>
+            </td>
+            </tr>
+
+            <tr>
+            <th>Categoría</th>
+            <td>
+                <label><input type="radio" name="categoria" value="Principiante" required> Principiante</label>
+                <label style="margin-left:10px;"><input type="radio" name="categoria" value="Intermedio"> Intermedio</label>
+                <label style="margin-left:10px;"><input type="radio" name="categoria" value="Experto"> Experto</label>
+            </td>
+            </tr>
+
+            <tr>
+            <th>Juegos favoritos</th>
+            <td>
+                <label><input type="checkbox" name="juegos" value="FIFA"> FIFA</label>
+                <label style="margin-left:10px;"><input type="checkbox" name="juegos" value="LoL"> LoL</label>
+                <label style="margin-left:10px;"><input type="checkbox" name="juegos" value="Minecraft"> Minecraft</label>
+                <label style="margin-left:10px;"><input type="checkbox" name="juegos" value="Otro"> Otro</label>
+            </td>
+            </tr>
+
+            <tr>
+            <th><label for="fecha">Fecha de inscripción</label></th>
+            <td>
+                <input id="fecha" name="fecha" type="date" min="2025-01-01" max="2025-12-31" required>
+            </td>
+            </tr>
+
+            <tr>
+            <th></th>
+            <td>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+            </td>
+            </tr>
+        </tbody>
+        </table>
+    </form>
+</body>
+</html>
+
+<!--Yahir Alejandro Hernández Flores - 631670
+DOY MI PALABRA DE QUE HE REALIZADO ESTA ACTIVIDAD CON INTEGRIDAD ACADÉMICA.-->>
